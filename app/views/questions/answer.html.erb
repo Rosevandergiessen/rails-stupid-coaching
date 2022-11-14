@@ -1,2 +1,13 @@
-<%= @answer %>
-<%= link_to "Ask another question", ask_path %>
+<h1>Stupid Coaching</h1>
+<br>
+<ul class="list-group border-start">
+  <li class="list-group-item border-0"><%= @question %></li>
+  <li class="list-group-item border-0">-You</li>
+</ul>
+<br>
+<ul class="list-group border-start">
+  <li class="list-group-item border-0 bg-warning bg-opacity-10"><%= @answer %></li>
+  <li class="list-group-item border-0 bg-warning bg-opacity-10">-Your coach</li>
+</ul>
+<br>
+<p class="text-decoration-none"><%= link_to "Ask a new question", ask_path %></p>
